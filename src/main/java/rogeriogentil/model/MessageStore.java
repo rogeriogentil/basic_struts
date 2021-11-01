@@ -7,8 +7,12 @@ public class MessageStore {
     public MessageStore() {
         this.message = "Hello String User!";
     }
+    
+    public MessageStore(final String userName) {
+		this.message = "Hello " + userName + "!";
+	}
 
-    public String getMessage() {
+	public String getMessage() {
         return message;
     }
 
